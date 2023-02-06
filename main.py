@@ -54,7 +54,7 @@ class mainWindow(QMainWindow):
     def __init__(self):
         global ser
         super().__init__()
-        loadUi("C:/Exopert/untitled.ui", self)
+        loadUi("untitled.ui", self)
         self.pushButton_Ready.clicked.connect(self.Ready)
         self.pushButton_Start.clicked.connect(self.Start)
         self.pushButton_Setting.clicked.connect(self.Setting)
@@ -311,7 +311,7 @@ class setting(QWidget):
 
     def __init__(self):
         super().__init__()
-        loadUi("C:/Exopert/setting.ui", self)
+        loadUi("setting.ui", self)
         self.pushButton.clicked.connect(self.jundal)
         self.pushButton_1.clicked.connect(lambda: self.tube(0))
         self.pushButton_2.clicked.connect(lambda: self.tube(1))
